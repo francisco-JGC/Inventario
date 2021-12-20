@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #e5e3e3;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container .nav {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.container .nav .toggle {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 15px;
+  background: #e5e3e3;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.container .nav .toggle span {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background: #1863ff;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.container .nav .toggle span:nth-child(1) {
+  transform: translateY(-15px);
+  width: 15px;
+  left: 7px;
+  margin-top: 1rem;
+}
+.container .nav .toggle span:nth-child(2) {
+  transform: translateY(15px);
+  width: 10px;
+  left: 7px;
+  margin-bottom: 1rem;
+}
+.container .nav .toggle span:nth-child(3) {
+  left: 7px;
+}
+.container .nav .active span:nth-child(1) {
+  width: 25px;
+  transform: translateY(-8px) rotate(45deg);
+  transition-delay: 0.125s;
+  left: 5px;
+}
+.container .nav .active span:nth-child(2) {
+  width: 25px;
+  transform: translateY(8px) rotate(315deg);
+  transition-delay: 0.25s;
+  left: 5px;
+}
+.container .nav .active span:nth-child(3) {
+  transform: translateX(60px);
+}
+.container .nav .nav-logo {
+  padding: 0 1rem;
+}
+.container .nav .nav-links {
+  min-height: 70vh;
+  margin-top: 2rem;
+}
+.container .nav .nav-links li {
+  border-radius: 10px;
+}
+.container .nav .nav-links li a {
+  background: #fff;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  display: flex;
+  padding: 0.7rem 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  color: #777;
+}
+.container .nav .nav-links li a:hover {
+  background: #f5f5f5;
+  color: #000;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.container .nav .nav-links li a span {
+  margin-left: 0.5rem;
+}
+.container .nav .nav-links li a .icon {
+  font-size: 20px;
+}
+.container .nav .nav-links .link-active {
+  position: relative;
+  color: #000;
+}
+.container .nav .nav-links .link-active::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: #8e59ff;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+}
+.container .nav .dark-mode {
+  position: relative;
+  background: #e5e3e3;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.container .nav .dark-mode [type=checkbox] {
+  display: none;
+}
+.container .nav .dark-mode [type=checkbox]:checked ~ .indicator {
+  transform: translate(170px);
+}
+.container .nav .dark-mode label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  z-index: 100;
+  cursor: pointer;
+}
+.container .nav .dark-mode .indicator {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  background: #fff;
+  z-index: 1;
+  left: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.container .nav-minimised {
+  width: 150px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main {
+  width: calc(100% - 315px);
+  height: 100vh;
+  align-self: flex-end;
+}
+
+.dark-mode {
+  background: #e3342f;
+}
+
+/*# sourceMappingURL=navigation.css.map */

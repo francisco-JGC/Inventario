@@ -1,0 +1,100 @@
+@import 'color.scss';
+
+.content-new_product {
+    min-height: 100vh;
+    width: 500px;
+
+    .product-tittle {
+        // background: #e5e3e3;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .data-product {
+        padding: 1rem;
+        background: $white;
+        border-radius: 15px;
+
+        .name {
+            input {
+                text-transform: capitalize;
+            }
+        }
+
+        .img {
+            [type='file'] {
+                display: none;
+            }
+
+            div {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                label{
+                    position: absolute;
+                    align-self: center;
+                    background: $white;
+                    cursor: pointer;
+                    padding: .5rem;
+                    box-shadow: 0 0 20px rgb(0, 0, 0,.2 );
+                    border-radius: 15px;
+                    transition: all .2s;
+                    &:hover{
+                        color: $green;
+                    }
+                    &:active{
+                        box-shadow: none;
+                    }
+                }
+                img {
+                    background: $fondoDiv;
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        }
+
+        .data-box {
+             
+            label {
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            input,
+            textarea {
+                margin-bottom: 1rem;
+                width: 100%;
+                padding: .5rem;
+                border-radius: 8px;
+                outline: none;
+                border: 1px solid transparent;
+                background: $fondoDiv;
+                transition: all .2s ease-in-out;
+
+                &:focus {
+                    border: 1px solid $blue;
+                    background: $white;
+                }
+            }
+
+            textarea {
+                height: 80px;
+            }
+   
+            .input-active {
+                border: 1px solid $green;
+                background: $white;
+            }
+        }
+
+        .extra-price {
+            display: flex;
+
+            [type='number'] {
+                width: 80%;
+                position: relative;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.content-new_product {
+  min-height: 100vh;
+  width: 500px;
+}
+.content-new_product .product-tittle {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.content-new_product .data-product {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 15px;
+}
+.content-new_product .data-product .name input {
+  text-transform: capitalize;
+}
+.content-new_product .data-product .img [type=file] {
+  display: none;
+}
+.content-new_product .data-product .img div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.content-new_product .data-product .img div label {
+  position: absolute;
+  align-self: center;
+  background: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transition: all 0.2s;
+}
+.content-new_product .data-product .img div label:hover {
+  color: #38c172;
+}
+.content-new_product .data-product .img div label:active {
+  box-shadow: none;
+}
+.content-new_product .data-product .img div img {
+  background: #e5e3e3;
+  width: 100%;
+  height: 200px;
+}
+.content-new_product .data-product .data-box label {
+  font-size: 15px;
+  font-weight: bold;
+}
+.content-new_product .data-product .data-box input,
+.content-new_product .data-product .data-box textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid transparent;
+  background: #e5e3e3;
+  transition: all 0.2s ease-in-out;
+}
+.content-new_product .data-product .data-box input:focus,
+.content-new_product .data-product .data-box textarea:focus {
+  border: 1px solid #1863ff;
+  background: #fff;
+}
+.content-new_product .data-product .data-box textarea {
+  height: 80px;
+}
+.content-new_product .data-product .data-box .input-active {
+  border: 1px solid #38c172;
+  background: #fff;
+}
+.content-new_product .data-product .extra-price {
+  display: flex;
+}
+.content-new_product .data-product .extra-price [type=number] {
+  width: 80%;
+  position: relative;
+}
+
+/*# sourceMappingURL=newProduct.css.map */

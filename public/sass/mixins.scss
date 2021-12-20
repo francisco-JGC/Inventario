@@ -1,0 +1,22 @@
+@import 'color.scss';
+
+@mixin button {
+    font-size: 16px;
+    background: none;
+    padding: .8em 1.2em;
+    color: $black;
+    border-radius: 15px;
+    // box-shadow: 0px 5px 5px 2px $grey;
+    border: 2px solid $black;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    // transition: all .1s;
+
+    &:hover {
+        // padding: .4em .9em;
+        color: $green;
+        // background: #fff;
+        box-shadow: none;
+        border: 2px solid $green;
+    }
+}
