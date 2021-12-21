@@ -5,6 +5,7 @@
                 <h3>{{__('Nuevo Producto')}}</h3>
             </div>
             <form class="data-product" id="form">
+                <input type="submit" value="{{__('Guardar')}}" class="button">
                 <div class="name data-box">
                     <label for="name">{{__('Nombre')}} <ion-icon name="alert-circle-outline" class="icon"></label><br>
                     <input type="text" name="name" id="name" autofocus>
@@ -27,7 +28,6 @@
                 </div>
                 <div class="extra-price data-box">
                     <div>
-
                         <label for="price">{{__('Precio')}} <ion-icon name="alert-circle-outline" class="icon">
                         </label><br>
                         <input type="number" name="price" id="price"><br>
