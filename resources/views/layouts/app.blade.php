@@ -13,7 +13,6 @@
         <!-- Styles -->
         <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
         <link rel="stylesheet" href="{{ asset('style/navigation.css') }}">
-        <link rel="stylesheet" href="{{ asset('style/newProduct.css') }}">
 
         <!-- Scripts -->
         <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
@@ -31,6 +30,6 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <script src="{{ asset('js/darkMode&Links.js') }}" defer></script>
+        <script src="{{ asset('js/darkMode&Links.js') }}"></script>
     </body>
 </html>

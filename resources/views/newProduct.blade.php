@@ -1,4 +1,6 @@
-<x-app-layout>
+<link rel="stylesheet" href="{{ asset('style/newProduct.css') }}">
+
+<x-app-layout>    
     <x-slot name="slot">
         <div class="content-new_product">
             <div class="product-tittle">
@@ -48,3 +50,5 @@
         </div>
     </x-slot>
 </x-app-layout>
+
+<script src="{{ asset('js/UI_newproduct.js') }}"></script>
