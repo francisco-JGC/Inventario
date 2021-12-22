@@ -1,0 +1,184 @@
+.content-inventario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  padding: 0 1rem;
+}
+.content-inventario .content-inventario-header {
+  width: 100%;
+  height: 20vh;
+  min-height: 20vh;
+}
+.content-inventario .content-inventario-header .search form {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.content-inventario .content-inventario-header .search form h4 {
+  position: relative;
+}
+.content-inventario .content-inventario-header .search form h4::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  width: 8px;
+  height: 100%;
+  background: #8e59ff;
+  border-radius: 10px;
+}
+.content-inventario .content-inventario-header .search form div {
+  display: flex;
+  background: #fff;
+  margin-left: 1rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+.content-inventario .content-inventario-header .search form div button, .content-inventario .content-inventario-header .search form div [type=text] {
+  padding: 0.3rem;
+  outline: none;
+  border: 1px solid transparent;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  background: none;
+  border-radius: 5px;
+}
+.content-inventario .content-inventario-header .search form div button {
+  padding: 0.4rem;
+  cursor: pointer;
+}
+.content-inventario .content-inventario-header .search form div button:hover {
+  color: #1863ff;
+}
+.content-inventario .content-inventario-header .search form div [type=text] {
+  font-size: 13px;
+}
+.content-inventario .content-inventario-header .head [type=checkbox] {
+  margin: 0 1rem;
+  outline: none;
+}
+.content-inventario .content-inventario-header .head {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background: #4dc0b5;
+  color: #fff;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.content-inventario .content-inventario-header .head h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.content-inventario .content-inventario-header .head .name {
+  width: 50%;
+}
+.content-inventario .content-inventario-header .head .other {
+  display: flex;
+  width: 50%;
+}
+.content-inventario .content-inventario-header .head .other h3 {
+  width: 120px;
+}
+.content-inventario .content-inventario-body {
+  overflow: auto;
+  width: 100%;
+  height: 70vh;
+  min-height: 70vh;
+  font-size: 14px;
+}
+.content-inventario .content-inventario-body .item {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.2);
+}
+.content-inventario .content-inventario-body .item:hover {
+  background: #e5e3e3;
+}
+.content-inventario .content-inventario-body .item:hover .product-info .option a {
+  background: #fff;
+}
+.content-inventario .content-inventario-body .item [type=checkbox] {
+  margin: 0 1rem;
+  outline: none;
+}
+.content-inventario .content-inventario-body .item .product,
+.content-inventario .content-inventario-body .item .product-info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.content-inventario .content-inventario-body .item .product {
+  justify-content: flex-start;
+}
+.content-inventario .content-inventario-body .item .product .product-img {
+  width: 50%;
+}
+.content-inventario .content-inventario-body .item .product .product-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+.content-inventario .content-inventario-body .item .product .product-desc {
+  padding: 1rem;
+  overflow: hidden;
+}
+.content-inventario .content-inventario-body .item .product-info div {
+  width: 120px;
+}
+.content-inventario .content-inventario-body .item .product-info .option {
+  display: flex;
+  justify-content: end;
+}
+.content-inventario .content-inventario-body .item .product-info .option a {
+  margin: 0 0.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background: #e5e3e3;
+  color: #333;
+}
+.content-inventario .content-inventario-body .item .product-info .state button {
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: #38c172;
+  color: #fff;
+  cursor: pointer;
+}
+.content-inventario .content-inventario-footer {
+  width: 100%;
+  height: 10vh;
+  min-height: 10vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.content-inventario .content-inventario-footer span:nth-child(2) {
+  color: #38c172;
+}
+.content-inventario .content-inventario-footer button {
+  background: #e3342f;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=inventario.css.map */

@@ -1,0 +1,218 @@
+@import 'color.scss';
+
+.content-inventario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background: $white;
+    padding: 0 1rem;
+
+    .content-inventario-header {
+        width: 100%;
+        height: 20vh;
+        min-height: 20vh;
+
+        .search{
+            form{
+                width: 100%;
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+
+                h4{
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: -1rem;
+                        width: 8px;
+                        height: 100%;
+                        background: $purple;
+                        border-radius: 10px;
+                    }
+                }
+
+                div{
+                    display: flex;
+                    background: $white;
+                    margin-left: 1rem;
+                    border-radius: 5px;
+                    border: 1px solid #999;
+
+                    button,[type='text'] {
+                        padding: .3rem;
+                        outline: none;
+                        border: 1px solid transparent;
+                        font-size: 15px;
+                        transition: all .2s ease-in-out;
+                        background: none;
+                        border-radius: 5px;
+    
+                    }
+                    button{
+                        padding: .4rem;
+                        cursor: pointer;
+                        &:hover{
+                            color: $blue;
+    
+                        }
+    
+                    }
+                    [type='text']{
+                        font-size: 13px;
+    
+                    }
+                }
+            }
+        }
+
+        .head [type='checkbox']{
+            margin: 0 1rem;
+            outline: none;
+        }
+
+        .head {
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            background: $teal;
+            color: $white;
+            justify-content: space-between;
+            border-radius: 5px;
+            h3 {
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            .name {
+                width: 50%;
+            }
+
+            .other {
+                display: flex;
+                width: 50%;
+
+                h3 {
+                    width: 120px;
+                }
+            }
+        }
+    }
+
+    .content-inventario-body {
+        overflow: auto;
+        width: 100%;
+        height: 70vh;
+        min-height: 70vh;
+        font-size: 14px;
+
+        .item {
+            width: 100%;
+            height: 100px;
+            padding: 1rem;
+            margin-bottom: .5rem;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(34, 34, 34, .2);
+            &:hover{
+                background: $fondoDiv;
+                .product-info .option a{
+                    background: $white;
+                }
+            }
+
+            [type='checkbox'] {
+                margin: 0 1rem;
+                outline: none;
+            }
+
+
+            .product,
+            .product-info {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+
+            .product {
+                justify-content: flex-start;
+
+                .product-img {
+                    width: 50%;
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 10px;
+                    }
+                }
+                .product-desc{
+                    padding: 1rem;
+                    overflow: hidden;
+                }
+            }
+
+            .product-info {
+                div {
+                    width: 120px;
+                }
+
+                .option {
+                    display: flex;
+                    justify-content: end;
+
+                    a {
+                        margin: 0 .5rem;
+                        padding: 1rem;
+                        border-radius: 50%;
+                        background: $fondoDiv;
+                        color: $black;
+                    }
+                }
+                .state{
+                    button{
+                        padding: .4rem 1rem;
+                        border-radius: 10px;
+                        outline: none;
+                        border: none;
+                        background: $green;
+                        color: $white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-inventario-footer {
+        width: 100%;
+        height: 10vh;
+        min-height: 10vh;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+
+        span:nth-child(2){
+            color: $green;    
+        }
+
+        button{
+            background: $red;
+            color: $white;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
