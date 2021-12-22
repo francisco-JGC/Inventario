@@ -13,11 +13,14 @@
         <!-- Styles -->
         <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
         <link rel="stylesheet" href="{{ asset('style/navigation.css') }}">
+        <link rel="stylesheet" href="{{ asset('style/alertMessage.css') }}">
 
         <!-- Scripts -->
         <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
     </head>
     <body id="body">
+    @include('layouts.alert-message')
+
         <div class="container">
             @include('layouts.navigation')
 

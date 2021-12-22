@@ -1,0 +1,22 @@
+.alert {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  font-weight: bold;
+  z-index: 1000;
+  background: #1863ff;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.alert:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+.alert:active {
+  transform: scale(0.9);
+}
+
+/*# sourceMappingURL=alertMessage.css.map */

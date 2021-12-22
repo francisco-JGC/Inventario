@@ -1,0 +1,23 @@
+@import 'color.scss';
+
+.alert{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    font-weight: bold;
+    z-index: 1000;
+    background: $blue;
+    padding: 1rem;
+    border-radius: 10px;
+    color: $white;
+    box-shadow: 0 0 15px rgb(0, 0, 0,.5);
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover{
+        box-shadow: 0 0 15px rgb(255, 255, 255,.5);
+    }
+    &:active{
+        transform: scale(.9);
+    }
+}
