@@ -12,6 +12,7 @@
   width: 100%;
   height: 20vh;
   min-height: 20vh;
+  padding: 0 0.5rem;
 }
 .content-inventario .content-inventario-header .search form {
   width: 100%;
@@ -86,6 +87,7 @@
   width: 120px;
 }
 .content-inventario .content-inventario-body {
+  padding: 0 0.5rem;
   overflow: auto;
   width: 100%;
   height: 70vh;
@@ -96,17 +98,18 @@
   width: 100%;
   height: 100px;
   padding: 1rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
   display: flex;
   align-items: center;
   border-radius: 5px;
   justify-content: space-between;
+  border: 1px solid transparent;
   border-bottom: 1px solid rgba(34, 34, 34, 0.2);
 }
 .content-inventario .content-inventario-body .item:hover {
   background: #e5e3e3;
 }
-.content-inventario .content-inventario-body .item:hover .product-info .option a {
+.content-inventario .content-inventario-body .item:hover .product-info .option button {
   background: #fff;
 }
 .content-inventario .content-inventario-body .item [type=checkbox] {
@@ -142,12 +145,15 @@
   display: flex;
   justify-content: end;
 }
-.content-inventario .content-inventario-body .item .product-info .option a {
+.content-inventario .content-inventario-body .item .product-info .option button {
   margin: 0 0.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
+  border: none;
   border-radius: 50%;
   background: #e5e3e3;
   color: #333;
+  font-size: 19px;
+  cursor: pointer;
 }
 .content-inventario .content-inventario-body .item .product-info .state button {
   padding: 0.4rem 1rem;
@@ -157,6 +163,11 @@
   background: #38c172;
   color: #fff;
   cursor: pointer;
+}
+.content-inventario .content-inventario-body .selected {
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 .content-inventario .content-inventario-footer {
   width: 100%;
