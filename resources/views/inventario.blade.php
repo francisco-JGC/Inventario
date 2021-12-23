@@ -30,11 +30,11 @@
             </div>
 
             <div class="content-inventario-body">
-                <div class="item">
-                    <input type="checkbox" name="" id="checkbox_unique">
+                <div class="item" id="producto1" onclick="selectedItem(producto1,nombre1)">
+                    <input type="checkbox" name="checkbox" id="nombre1" disabled="true">
                     <div class="product">
                         <div class="product-img">
-                            <img src="{{ asset('img/fondo.jpg') }}" alt="">
+                            <img src="{{ asset('img/fondo.jpg') }}" class="img">
                         </div>
                         <div class="product-desc">
                             <span>{{__('titulo')}}</span>
@@ -51,21 +51,21 @@
                             <button>{{__('Activo')}}</button>
                         </div>
                         <div class="option">
-                            <a href="#">
-                            <ion-icon name="brush-outline"></ion-icon>
-                            </a>
-                            <a href="#">
+                            <button onclick="updateItem(producto1,nombre1)">
+                                <ion-icon name="brush-outline"></ion-icon>
+                            </button>
+                            <button onclick="removeItem(producto1,nombre1)">
                                 <ion-icon class="icon" name="trash-outline"></ion-icon>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="item">
-                    <input type="checkbox" name="" id="checkbox_unique">
+                <div class="item" id="producto2" onclick="selectedItem(producto2,nombre2)">
+                    <input type="checkbox" name="checkbox" id="nombre2" disabled="true">
                     <div class="product">
                         <div class="product-img">
-                            <img src="{{ asset('img/fondo.jpg') }}" alt="">
+                            <img src="{{ asset('img/fondo.jpg') }}" class="img">
                         </div>
                         <div class="product-desc">
                             <span>{{__('titulo')}}</span>
@@ -82,21 +82,21 @@
                             <button>{{__('Activo')}}</button>
                         </div>
                         <div class="option">
-                            <a href="#">
-                            <ion-icon name="brush-outline"></ion-icon>
-                            </a>
-                            <a href="#">
+                            <button onclick="updateItem(producto2,nombre2)">
+                                <ion-icon name="brush-outline"></ion-icon>
+                            </button>
+                            <button onclick="removeItem(producto2,nombre2)">
                                 <ion-icon class="icon" name="trash-outline"></ion-icon>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="item">
-                    <input type="checkbox" name="" id="checkbox_unique">
+                <div class="item" id="producto3" onclick="selectedItem(producto3,nombre3)">
+                    <input type="checkbox" name="checkbox" id="nombre3" disabled="true">
                     <div class="product">
                         <div class="product-img">
-                            <img src="{{ asset('img/fondo.jpg') }}" alt="">
+                            <img src="{{ asset('img/fondo.jpg') }}" class="img">
                         </div>
                         <div class="product-desc">
                             <span>{{__('titulo')}}</span>
@@ -113,21 +113,21 @@
                             <button>{{__('Activo')}}</button>
                         </div>
                         <div class="option">
-                            <a href="#">
-                            <ion-icon name="brush-outline"></ion-icon>
-                            </a>
-                            <a href="#">
+                            <button onclick="updateItem(producto3,nombre3)">
+                                <ion-icon name="brush-outline"></ion-icon>
+                            </button>
+                            <button onclick="removeItem(producto3,nombre3)">
                                 <ion-icon class="icon" name="trash-outline"></ion-icon>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="item">
-                    <input type="checkbox" name="" id="checkbox_unique">
+                <div class="item" id="producto4" onclick="selectedItem(producto4,nombre4)">
+                    <input type="checkbox" name="checkbox" id="nombre4" disabled="true">
                     <div class="product">
                         <div class="product-img">
-                            <img src="{{ asset('img/fondo.jpg') }}" alt="">
+                            <img src="{{ asset('img/fondo.jpg') }}" class="img">
                         </div>
                         <div class="product-desc">
                             <span>{{__('titulo')}}</span>
@@ -144,21 +144,21 @@
                             <button>{{__('Activo')}}</button>
                         </div>
                         <div class="option">
-                            <a href="#">
-                            <ion-icon name="brush-outline"></ion-icon>
-                            </a>
-                            <a href="#">
+                            <button onclick="updateItem(producto4,nombre4)">
+                                <ion-icon name="brush-outline"></ion-icon>
+                            </button>
+                            <button onclick="removeItem(producto4,nombre4)">
                                 <ion-icon class="icon" name="trash-outline"></ion-icon>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="item">
-                    <input type="checkbox" name="" id="checkbox_unique">
+                <div class="item" id="producto5" onclick="selectedItem(producto5,nombre5)">
+                    <input type="checkbox" name="checkbox" id="nombre5" disabled="true">
                     <div class="product">
                         <div class="product-img">
-                            <img src="{{ asset('img/fondo.jpg') }}" alt="">
+                            <img src="{{ asset('img/fondo.jpg') }}" class="img">
                         </div>
                         <div class="product-desc">
                             <span>{{__('titulo')}}</span>
@@ -175,22 +175,23 @@
                             <button>{{__('Activo')}}</button>
                         </div>
                         <div class="option">
-                            <a href="#">
-                            <ion-icon name="brush-outline"></ion-icon>
-                            </a>
-                            <a href="#">
+                            <button onclick="updateItem(producto5,nombre5)">
+                                <ion-icon name="brush-outline"></ion-icon>
+                            </button>
+                            <button onclick="removeItem(producto5,nombre5)">
                                 <ion-icon class="icon" name="trash-outline"></ion-icon>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                
             </div>
             <div class="content-inventario-footer">
-                <span><ion-icon name="checkmark-done-outline"></ion-icon> <span id="selected-item">{{__('3')}}</span>{{__(' Productos seleccionados')}}</span>
+                <span><ion-icon name="checkmark-done-outline"></ion-icon> <span id="count-selected-item">{{__('0')}}</span>{{__(' Productos seleccionados')}}</span>
                 <button><ion-icon name="trash-outline"></ion-icon> {{__('Eliminar')}}</button>
             </div>
         </div>
-
 
     </x-slot>
 </x-app-layout>
